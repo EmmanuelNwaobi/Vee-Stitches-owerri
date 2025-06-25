@@ -1,0 +1,481 @@
+/* HEADER SECTION BEGINS */
+
+/* STICKY NAVIGATION */
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.97);
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+sticky .section-hero {
+  margin-top: 9.6rem;
+}
+
+.header {
+  background-color: #e6efed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4.8rem;
+
+  /* We set the height in other to manipulate sticky navigation */
+  height: 9.6rem;
+
+  /* postion the mobile nav relatively to the header  */
+  position: relative;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: #3b3b3b;
+}
+
+.logo {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.logo span {
+  color: #005345;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 4.8rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #3b3b3b;
+  font-size: 1.8rem;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #005345;
+}
+/* mobile navigation styling */
+.btn-mobile-nav {
+  display: none;
+  background: none;
+  border: none;
+}
+
+.mobile-nav-icon {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: inherit;
+  cursor: pointer;
+}
+
+.mobile-nav-icon[name="close-outline"] {
+  display: none;
+}
+
+/* HEADER SECTION ENDS */
+
+/* SECTION HERO BEGINS */
+.section-hero {
+  padding: 9.6rem 0;
+  background-image: linear-gradient(
+      rgba(35, 35, 35, 0.6),
+      rgba(35, 35, 35, 0.6)
+    ),
+    url(/img/vee-hero2-max.jpg);
+  background-size: cover;
+  color: #fff;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.hero-summary {
+  width: 50%;
+}
+
+.heading-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+  color: #e6efed;
+}
+
+.hero-customers {
+  margin-top: 6.4rem;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.customers-img {
+  display: flex;
+}
+
+.customer-img {
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+  border: 3px solid #e6efed;
+}
+
+.customers-img .customer-img:last-child {
+  margin: 0;
+}
+
+.customer-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.customer-text span {
+  color: #b88b4a;
+  font-weight: 700;
+}
+
+/* SECTION HERO ENDS */
+
+/* WHAT WE CAN PROVIDE SECTION BEGINS */
+.section-provide {
+  padding: 9.6rem 0;
+}
+
+.provide-text-box {
+  width: 60%;
+  margin-bottom: 6.4rem;
+}
+
+.section-description {
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+.sample-collections {
+  margin-bottom: 12.8rem;
+}
+
+.dress-image img,
+.latest-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 1.2rem;
+}
+
+.dress-image-description {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #3b3b3b;
+  letter-spacing: 1px;
+}
+
+.latest-description-box {
+  display: grid;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+.latest-description {
+  /* width: 40%; */
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-bottom: 2.4rem;
+}
+
+.latest-img p {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #3b3b3b;
+  letter-spacing: 1px;
+}
+
+/* WHAT WE CAN PROVIDE SECTION ENDS */
+
+/* <!-- WHY TO CHOOSE US SECTION BEGINS  --> */
+
+.section-why-choose-us {
+  background-color: #e6efed;
+}
+
+.why-choose-us {
+  margin-bottom: 9.6rem;
+}
+
+.why-choose-us-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 9.6rem;
+}
+
+.reason-box-container {
+  padding: 0 9.6rem;
+}
+
+.reason-box-heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+  color: #3b3b3b;
+}
+
+.reason-box-description {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.reason-box-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #e6efed;
+  margin-bottom: 3.2rem;
+  padding: 1.2rem;
+  border-radius: 50%;
+  background-color: #005345;
+}
+
+.testimonial-container {
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+}
+
+.testimonials {
+  padding: 9.6rem;
+}
+
+.testimonial-heading {
+  font-family: "Playfair Display", serif;
+  font-size: 3.6rem;
+  color: #3b3b3b;
+  margin-bottom: 9.6rem;
+}
+
+.testimonial-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  column-gap: 6.4rem;
+  row-gap: 8rem;
+}
+
+.testimonial-img {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  margin-bottom: 1.6rem;
+  object-fit: cover;
+}
+
+.testimonial-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #3b3b3b;
+  margin-bottom: 1.6rem;
+}
+
+.testimonial-name {
+  font-size: 1.4rem;
+  color: #5c5c5c;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.4s ease-in-out;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+/* <!-- WHY TO CHOOSE US SECTION ENDS  --> */
+
+/* <!-- ABOUT US SECTION BEGINS  --> */
+.section-about-us {
+  padding: 9.6rem 0;
+}
+
+.about-us-heading {
+  display: grid;
+  align-items: center;
+  margin-bottom: 6.4rem;
+}
+
+.about-us-description {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  color: #5c5c5c;
+}
+
+.about-me {
+  align-items: center;
+}
+
+.about-me-story {
+  font-size: 2rem;
+  line-height: 1.8;
+  font-weight: 500;
+  color: #3b3b3b;
+}
+
+.my-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.image-of-vee {
+  width: 80%;
+  object-fit: cover;
+  transition: all 0.4s ease-in-out;
+}
+
+.image-of-vee:hover {
+  transform: scale(1.05);
+}
+/* <!-- ABOUT US SECTION ENDS  --> */
+
+/* CALL-TO-ACTION SECTION BEGINS */
+.call-to-action {
+  padding: 9.6rem 0;
+}
+
+.cta--bg {
+  background-image: linear-gradient(
+      to left top,
+      rgba(230, 239, 237, 0.6),
+      rgba(0, 92, 77, 0.6)
+    ),
+    url(/img/cta.jpg);
+  background-size: cover;
+  text-align: center;
+  padding: 6.4rem 3.2rem;
+  border-radius: 9px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  justify-content: center;
+}
+
+.cta {
+  width: 75%;
+}
+
+.cta-description {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+/* CALL-TO-ACTION SECTION ENDS */
+
+/* FOOTER SECTION BEGINS */
+.footer {
+  padding: 9.6rem 0;
+  border-top: 1px solid #eeeeee;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  display: inline-block;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #4a4a4a;
+
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #000;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  color: #5c5c5c;
+  line-height: 1.6rem;
+  margin-top: auto;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #3b3b3b;
+  margin-bottom: 3.2rem;
+}
+
+.contact-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts {
+  font-style: normal;
+  line-height: 1.6;
+  margin-top: auto;
+}
+
+.address {
+  font-size: 1.6rem;
+  margin-bottom: 2.4rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}

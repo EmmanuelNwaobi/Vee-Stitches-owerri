@@ -1,0 +1,237 @@
+/* Below 1360px  */
+@media (max-width: 85em) {
+  .hero {
+    max-width: 120rem;
+  }
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Below 1271 small laptop screen  */
+@media (max-width: 79em) {
+  /* reduce fontsize to 9px */
+  html {
+    font-size: 56.25%;
+  }
+
+  .header {
+    padding: 0px 3.2rem;
+  }
+
+  .primary-heading {
+    font-size: 4.4rem;
+  }
+
+  .testimonial-content {
+    grid-template-columns: 1fr;
+  }
+
+  .secondary-heading,
+  .testimonial-heading {
+    font-size: 3rem;
+  }
+
+  .hero {
+    padding: 0 6.4rem;
+  }
+
+  .hero-summary {
+    width: 60%;
+  }
+
+  .container {
+    padding: 0 6.4rem;
+  }
+
+  .cta--bg {
+    padding: 8rem 6.4rem;
+  }
+}
+
+/* Below 1099 Tablet in landscape mode  */
+@media (max-width: 69em) {
+  /* bring font-size down to 8px */
+  html {
+    font-size: 50%;
+  }
+
+  .grid--3-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .latest-dress-images .latest-img:last-child {
+    grid-column: -3/-1;
+    justify-self: center;
+    width: 50%;
+  }
+}
+
+/* Below 965 Tablet in potrait mode  */
+@media (max-width: 60em) {
+  .grid {
+    column-gap: 3.2rem;
+    row-gap: 8rem;
+  }
+
+  .tertiary-heading {
+    font-size: 2rem;
+  }
+
+  .hero-summary {
+    width: 70%;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  /* How the nav will look like when it's open */
+  .nav {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* Hide the Nav after implementing the styles  */
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .main-nav {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  /* Create a class for when the nav is open  */
+  .nav-open .nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .mobile-nav-icon[name="menu-outline"] {
+    display: none;
+  }
+
+  .nav-open .mobile-nav-icon[name="close-outline"] {
+    display: block;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 2.4rem;
+  }
+
+  .testimonial-container {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .testimonials {
+    padding: 6.4rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .gallery .gallery-item:nth-child(5) {
+    grid-row: span 2;
+  }
+
+  .cta {
+    width: 100%;
+  }
+}
+
+/* Below 750 phone in landscape mode  */
+@media (max-width: 49em) {
+  .hero-summary {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-customers {
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .provide-text-box {
+    width: 100%;
+  }
+
+  .my-image {
+    grid-row: 1;
+  }
+
+  .latest-description {
+    grid-row: 2;
+  }
+
+  .why-choose-us {
+    margin-bottom: 6.4rem;
+  }
+}
+
+/* Below 587 mobile phones  */
+@media (max-width: 37em) {
+  .section-hero {
+    background-position: center;
+  }
+
+  .grid--3-cols {
+    grid-template-columns: 1fr;
+  }
+  .latest-dress-images .latest-img:nth-child(2) {
+    grid-row: 2;
+  }
+
+  .latest-dress-images .latest-img:last-child {
+    width: 100%;
+  }
+
+  .testimonial-content {
+    grid-template-columns: 1fr;
+  }
+
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(9, 1fr);
+  }
+
+  .gallery .gallery-item:nth-child(5) {
+    grid-row: span 1;
+  }
+
+  .cta--bg {
+    padding: 8rem 1.6rem;
+  }
+
+  .social-links {
+    margin-bottom: 1.6rem;
+  }
+}
